@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+/* html {
+  scroll-behavior: smooth;
+} */
+
+.light {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  /* background: linear-gradient(to bottom, #dbeafe, white); */
+  /* color: #00008c; */
+  background-color: white;
+  color: #00005e;
+
+  font-family: sans-serif;
+}
+.dark {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-color: black;
+  /* background: linear-gradient(to bottom, #111111, #555555); */
+  /* color: rgb(81, 80, 80); */
+  color: #a9a8a8;
+  font-family: sans-serif;
+}
