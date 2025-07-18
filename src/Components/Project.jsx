@@ -1,3 +1,5 @@
+import React from "react";
+
 function Project({ theme, projectData }) {
   return (
     <div id="project">
