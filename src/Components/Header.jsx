@@ -3,7 +3,7 @@ import { IoHome } from "react-icons/io5";
 import { WiMoonAltWaxingGibbous2 } from "react-icons/wi";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-function Header({ changeColor, theme }) {
+function Header({ changeColor, theme, headerData }) {
   const [toggle, setToggle] = useState(false);
 
   function clickHandler() {
@@ -18,7 +18,7 @@ function Header({ changeColor, theme }) {
         }`}
       >
         <a href="#hero">
-          <IoHome className=" scroll-smooth w-[30px] h-[30px] " />
+          <IoHome className=" scroll-smooth w-[30px] h-[30px] absolute top-7 left-15 " />
         </a>
 
         <button>
@@ -28,31 +28,58 @@ function Header({ changeColor, theme }) {
           />
         </button>
 
-        <div className=" max-sm:hidden scroll-smooth flex gap-6 font-serif border-2 border-[#FFB295] mt-4  py-4 px-10 rounded-full ">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#project">Project</a>
-          <a href="#contact">Contact</a>
+        <div className=" max-sm:hidden scroll-smooth flex gap-6 font-serif border-2 border-[#FFB295] mt-4 ml-[-180px] py-4 px-10 rounded-full ">
+          {headerData?.map((data) => {
+            return (
+              <a
+                key={data.name}
+                href={data.link}
+                className="capitalize cursor-pointer"
+              >
+                {data.name}
+              </a>
+            );
+          })}
         </div>
 
         <button onClick={changeColor}>
-          <WiMoonAltWaxingGibbous2 className="w-[30px] h-[30px] " />
+          <WiMoonAltWaxingGibbous2 className="w-[30px] h-[30px] absolute top-7 right-20 " />
         </button>
       </div>
 
       {toggle && (
-        <ul className=" max-sm:block sm:hidden scroll-smooth gap-6 font-serif border-2 border-[#FFB295] mt-4  py-4 px-10 rounded-full ">
+        <ul className=" text-center max-sm:block sm:hidden scroll-smooth font-serif sticky mt-4  py-4 px-6 rounded-md ">
           <li>
-            <a href="#about">Abotfjgfjgfgfut</a>
+            <a
+              className="border-b-1 border-[#FFB295]  pb-1  mb-2"
+              href="#about"
+            >
+              About
+            </a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a
+              className="border-b-1 border-[#FFB295]  pb-1  mb-2"
+              href="#skills"
+            >
+              Skills
+            </a>
           </li>
           <li>
-            <a href="#project">Project</a>
+            <a
+              className="border-b-1 border-[#FFB295]  pb-1  mb-2"
+              href="#project"
+            >
+              Project
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a
+              className="border-b-1 border-[#FFB295]  pb-1  mb-2"
+              href="#contact"
+            >
+              Contact
+            </a>
           </li>
         </ul>
       )}

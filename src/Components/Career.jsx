@@ -21,7 +21,7 @@ function Career({ theme }) {
           theme ? "bg-[#dbebff] text-gray-600" : "bg-[#525151] text-black"
         } h-[100%] py-10 rounded-md`}
       >
-        <p className="font-bold font-serif pb-4">
+        <p className=" max-sm:px-4 font-bold font-serif pb-4">
           "Code is my canvas, and the web is my gallery."
         </p>
         <p className="font-700 font-serif">— My Approach to Development</p>

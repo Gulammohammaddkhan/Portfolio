@@ -18,7 +18,7 @@ function Connect({ theme }) {
         action="#"
         className="flex flex-col justify-center items-center gap-2"
       >
-        <div className="flex justify-center  gap-8 mb-6">
+        <div className="flex max-sm:flex max-sm:flex-col justify-center  gap-8 mb-6">
           <div>
             <input
               type="text"
@@ -46,7 +46,7 @@ function Connect({ theme }) {
           name="message"
           id="message"
           placeholder="Enter your message"
-          className={` w-[100%] h-72 py-4 px-2 rounded-md   ${
+          className={` w-[100%] h-72 py-4 px-2 mb-4 rounded-md   ${
             theme === false
               ? "bg-[#525151] text-black border-0 focus:border-0 focus:ring-2 focus:ring-[#FFB295] focus:outline-hidden"
               : "bg-[#dbeafe] text-[#4a4949] hover:bg-[#c5d3e5] hover:text-[#00008c] focus:border-0 focus:ring-2 focus:ring-[#c5d3e5] focus:outline-hidden"

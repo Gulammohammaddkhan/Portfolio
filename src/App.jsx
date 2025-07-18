@@ -13,6 +13,7 @@ import Skills from "./Components/Skills";
 import Project from "./Components/project";
 import Connect from "./Components/Connect";
 import Footer from "./Components/Footer";
+import data from "./data";
 
 function App() {
   const [color, setColor] = useState(false);
@@ -21,14 +22,18 @@ function App() {
   }
   return (
     <div className={color ? "light" : "dark"}>
-      <Header changeColor={clickHandler} theme={color} />
       {/* <Navigation /> */}
+      <Header
+        headerData={data.headerData}
+        changeColor={clickHandler}
+        theme={color}
+      />
       <ContentWrapper>
         <Hero theme={color} />
-        <Introduction />
+        <Introduction introData={data.introData} />
         <Career theme={color} />
-        <Skills />
-        <Project theme={color} />
+        <Skills skillsData={data.skillsData} />
+        <Project projectData={data.projectData} theme={color} />
         <Connect theme={color} />
         <Footer theme={color} />
       </ContentWrapper>
