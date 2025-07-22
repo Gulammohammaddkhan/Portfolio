@@ -4,7 +4,7 @@ import ContentWrapper from "./ContentWrapper";
 function Career({ theme }) {
   return (
     <div className="pb-10">
-      <h1 className="flex justify-center text-3xl font-serif pb-4">
+      <h1 className=" animate__animated animate-pulse animate__delay-1s animate__slow flex justify-center text-3xl font-serif pb-4">
         Career - Highlights
       </h1>
       <div className="flex items-center gap-2 pb-2">
@@ -17,7 +17,7 @@ function Career({ theme }) {
         development.
       </p>
       <div
-        className={`flex flex-col justify-center items-center w-[100%] ${
+        className={`flex flex-col justify-center items-center w-[100%] transform transition duration-300 ease-in-out hover:scale-110 ${
           theme ? "bg-[#dbebff] text-gray-600" : "bg-[#525151] text-black"
         } h-[100%] py-10 rounded-md`}
       >

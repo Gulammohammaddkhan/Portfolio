@@ -14,6 +14,7 @@ import Project from "./Components/project";
 import Connect from "./Components/Connect";
 import Footer from "./Components/Footer";
 import data from "./data";
+import "animate.css";
 
 function App() {
   const [color, setColor] = useState(false);

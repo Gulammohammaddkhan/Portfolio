@@ -8,7 +8,7 @@ function Hero({ theme }) {
       id="hero"
       className=" flex flex-col justify-center items-center self-center py-24 "
     >
-      <h1 className=" max-sm:text-2xl min-sm:text-7xl font-serif pb-6">
+      <h1 className="animate__animated animate-pulse animate__delay-1s animate__slow max-sm:text-2xl min-sm:text-7xl font-serif pb-6">
         Gulam Mohammad.Khan
       </h1>
       <h3 className="max-sm:lg min-sm:text-3xl font-serif pb-5">
@@ -22,13 +22,16 @@ function Hero({ theme }) {
         {/* <button className="bg-[#FF8b61] text-[#4a4949] hover:bg-[#ffa281] cursor-pointer py-4 px-8 rounded-full  font-semibold mr-6">
           Contact me &rarr;
         </button> */}
-        <Button
-          theme={theme}
-          text={"Contact me →"}
-          bgColor={"#FF8b61"}
-          color={"#4a4949"}
-          hoverColor={"#ffa281"}
-        />
+
+        <a href="#contact">
+          <Button
+            theme={theme}
+            text={"Contact me →"}
+            bgColor={"#FF8b61"}
+            color={"#4a4949"}
+            hoverColor={"#ffa281"}
+          ></Button>
+        </a>
         <Button
           theme={theme}
           text={"My Resume"}

@@ -11,14 +11,14 @@ function Header({ changeColor, theme, headerData }) {
   }
 
   return (
-    <div>
+    <div className=" w-full sticky  top-0 z-50">
       <div
-        className={` flex justify-evenly items-center sticky top-0 ${
+        className={` flex justify-evenly items-center pb-2 ${
           theme ? "bg-white" : "bg-black"
         }`}
       >
         <a href="#hero">
-          <IoHome className=" scroll-smooth w-[30px] h-[30px] absolute top-7 left-15 " />
+          <IoHome className="transform transition duration-300 ease-in-out hover:scale-140 scroll-smooth w-[30px] h-[30px] absolute top-7 left-15 " />
         </a>
 
         <button>
@@ -28,13 +28,13 @@ function Header({ changeColor, theme, headerData }) {
           />
         </button>
 
-        <div className=" max-sm:hidden scroll-smooth flex gap-6 font-serif border-2 border-[#FFB295] mt-4 ml-[-180px] py-4 px-10 rounded-full ">
+        <div className=" transform transition duration-300 ease-in-out hover:scale-110 max-sm:hidden scroll-smooth flex gap-6 font-serif border-2 border-[#FFB295] mt-4 ml-[-260px] py-4 px-10 rounded-full ">
           {headerData?.map((data) => {
             return (
               <a
                 key={data.name}
                 href={data.link}
-                className="capitalize cursor-pointer"
+                className="capitalize cursor-pointer transform transition duration-300 ease-in-out hover:scale-110"
               >
                 {data.name}
               </a>
@@ -43,7 +43,7 @@ function Header({ changeColor, theme, headerData }) {
         </div>
 
         <button onClick={changeColor}>
-          <WiMoonAltWaxingGibbous2 className="w-[30px] h-[30px] absolute top-7 right-20 " />
+          <WiMoonAltWaxingGibbous2 className="w-[30px] h-[30px] absolute top-7 right-20 transform transition duration-300 ease-in-out hover:scale-140  " />
         </button>
       </div>
 

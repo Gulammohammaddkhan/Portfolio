@@ -8,7 +8,9 @@ function Connect({ theme }) {
     <div id="contact" className="pt-24 pb-10">
       <div className="flex flex-col items-center ">
         <h4 className="text-lg font-serif mb-2">Connect with me</h4>
-        <h2 className="text-5xl font-serif mb-6 ">Get in touch</h2>
+        <h2 className=" animate__animated animate-pulse animate__delay-1s animate__slow text-5xl font-serif mb-6 ">
+          Get in touch
+        </h2>
         <p className="font-serif text-lg mb-12">
           I'd love to hear from you! If you have any questions, comments, or
           feedback, please use the form below.
@@ -23,7 +25,7 @@ function Connect({ theme }) {
             <input
               type="text"
               placeholder="Enter your name"
-              className={`  w-72 py-4 px-2 rounded-md ${
+              className={`  w-72 py-4 px-2 rounded-md transform transition duration-300 ease-in-out hover:scale-110 ${
                 theme === false
                   ? "bg-[#525151] text-black border-0 focus:border-0 focus:ring-2 focus:ring-[#FFB295] focus:outline-hidden"
                   : "bg-[#dbeafe] text-[#4a4949] hover:bg-[#c5d3e5] hover:text-[#00008c] focus:border-0 focus:ring-2 focus:ring-[#c5d3e5] focus:outline-hidden "
@@ -34,7 +36,7 @@ function Connect({ theme }) {
             <input
               type="email"
               placeholder="Enter your email"
-              className={`  w-72 py-4 px-2 rounded-md ${
+              className={`  w-72 py-4 px-2 rounded-md transform transition duration-300 ease-in-out hover:scale-110 ${
                 theme === false
                   ? "bg-[#525151] text-black border-0 focus:border-0 focus:ring-2 focus:ring-[#FFB295] focus:outline-hidden"
                   : "bg-[#dbeafe] text-[#4a4949] hover:bg-[#c5d3e5] hover:text-[#00008c] focus:border-0 focus:ring-2 focus:ring-[#c5d3e5] focus:outline-hidden "
@@ -46,7 +48,7 @@ function Connect({ theme }) {
           name="message"
           id="message"
           placeholder="Enter your message"
-          className={` w-[100%] h-72 py-4 px-2 mb-4 rounded-md   ${
+          className={` w-[100%] h-72 py-4 px-2 mb-4 rounded-md  transform transition duration-300 ease-in-out hover:scale-110  ${
             theme === false
               ? "bg-[#525151] text-black border-0 focus:border-0 focus:ring-2 focus:ring-[#FFB295] focus:outline-hidden"
               : "bg-[#dbeafe] text-[#4a4949] hover:bg-[#c5d3e5] hover:text-[#00008c] focus:border-0 focus:ring-2 focus:ring-[#c5d3e5] focus:outline-hidden"
@@ -70,7 +72,7 @@ function Connect({ theme }) {
           hoverText={"gray-500"}
         />
       </form>
-      <div className="flex justify-center items-center gap-2 mt-32 ">
+      <div className=" animate__animated animate-pulse animate__delay-1s animate__slow flex justify-center items-center gap-2 mt-32 ">
         <IoIosMail
           className={` w-10 h-10  rounded-sm ${
             theme === false ? "text-[#a9a8a8] " : "text-[#00005e]"
