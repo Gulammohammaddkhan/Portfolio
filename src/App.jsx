@@ -6,7 +6,7 @@ import Introduction from "./Components/Introduction";
 import Career from "./Components/Career";
 import ContentWrapper from "./Components/ContentWrapper";
 import Skills from "./Components/Skills";
-import Project from "./Components/project";
+import Project from "./Components/Project";
 import Connect from "./Components/Connect";
 import Footer from "./Components/Footer";
 import data from "./data";
