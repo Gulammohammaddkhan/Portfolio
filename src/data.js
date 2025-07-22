@@ -1,8 +1,8 @@
 import html from "./Images/html-logo.svg";
 import css from "./Images/css-logo.svg";
-import javaScript from "./Images/javaScript-logo..svg";
+import javaScript from "./Images/javaScript-logo.svg";
 import tailwind from "./Images/tailwind-logo.svg";
-import react from "./Images/react-logo..svg";
+import react from "./Images/react-logo.svg";
 
 const data = {
   projectData: [
