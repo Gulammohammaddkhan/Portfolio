@@ -1,6 +1,6 @@
 import React from "react";
 import { FaSquareGithub } from "react-icons/fa6";
-import linkedIn from "../Images/linkedin_icon.webp";
+import linkedIn from "../Images/linkedinicon.webp";
 
 function Footer({ theme }) {
   return (

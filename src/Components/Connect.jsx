@@ -1,5 +1,5 @@
 import React from "react";
-import mail from "../Images/mail_icon.webp";
+import mail from "../Images/mailicon.webp";
 import { IoIosMail } from "react-icons/io";
 import Button from "./Button";
 
