@@ -11,7 +11,7 @@ function Header({ changeColor, theme, headerData }) {
   }
 
   return (
-    <div className=" w-full sticky  top-0 z-50">
+    <div className=" w-full sticky top-0 z-50">
       <div
         className={` flex justify-evenly items-center pb-2 ${
           theme ? "bg-white" : "bg-black"

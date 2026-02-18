@@ -49,7 +49,7 @@ const data = {
     { skill: "TAILWIND", imgSrc: tailwind },
   ],
   introData: [
-    { numb: 7, desc: "Months of Expirence" },
+    { numb: 2 + "+", desc: "Years of Expirence" },
     { numb: 4, desc: "Projects Completed" },
     { numb: 5, desc: "Skills Mastered" },
   ],

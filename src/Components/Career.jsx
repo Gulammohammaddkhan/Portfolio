@@ -13,8 +13,7 @@ function Career({ theme }) {
       </div>
       <p className="font-serif font-semibold pb-6">
         Began my professional journey as a Frontend Engineer at Mak Byte from
-        July 2022 to January 2023, where I built a strong foundation in web
-        development.
+        September 2023, where I built a strong foundation in web development.
       </p>
       <div
         className={`flex flex-col justify-center items-center w-[100%] transform transition duration-300 ease-in-out hover:scale-110 ${
@@ -31,3 +30,5 @@ function Career({ theme }) {
 }
 
 export default Career;
+
+// July 2022 to January 2023

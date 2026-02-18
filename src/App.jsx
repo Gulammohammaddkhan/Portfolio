@@ -19,7 +19,6 @@ function App() {
   }
   return (
     <div className={color ? "light" : "dark"}>
-      {/* <Navigation /> */}
       <Header
         headerData={data.headerData}
         changeColor={clickHandler}
