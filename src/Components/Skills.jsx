@@ -14,14 +14,16 @@ function Skills({ skillsData }) {
           return (
             <div
               key={item.skill}
-              className="flex flex-col justify-center items-center"
+              className="flex flex-col justify-center  items-center"
             >
               <img
                 src={item.imgSrc}
                 alt="html-logo"
                 className="w-36 pb-2 transform transition duration-300 ease-in-out hover:scale-110"
               />
-              <p className="font-serif font-semibold text-lg">{item.skill}</p>
+              <p className="font-serif font-semibold text-lg pb-6">
+                {item.skill}
+              </p>
             </div>
           );
         })}

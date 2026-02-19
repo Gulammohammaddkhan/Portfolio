@@ -2,8 +2,31 @@ import React from "react";
 import mail from "../Images/mailicon.webp";
 import { IoIosMail } from "react-icons/io";
 import Button from "./Button";
+import emailjs from "@emailjs/browser";
 
 function Connect({ theme }) {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_s0qfwjr",
+        "template_aithf0p",
+        e.target,
+        "bqZuzaZq4XYFCIDLC",
+      )
+      .then(
+        () => {
+          alert("Message sent successfully ✅");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error);
+          alert("Failed to send ❌");
+        },
+      );
+  };
+
   return (
     <div id="contact" className="pt-24 pb-10">
       <div className="flex flex-col items-center ">
@@ -17,6 +40,7 @@ function Connect({ theme }) {
         </p>
       </div>
       <form
+        onSubmit={sendEmail}
         action="#"
         className="flex flex-col justify-center items-center gap-2"
       >
@@ -24,6 +48,7 @@ function Connect({ theme }) {
           <div>
             <input
               type="text"
+              name="user_name"
               placeholder="Enter your name"
               className={`  w-72 py-4 px-2 rounded-md transform transition duration-300 ease-in-out hover:scale-110 ${
                 theme === false
@@ -35,6 +60,7 @@ function Connect({ theme }) {
           <div>
             <input
               type="email"
+              name="user_email"
               placeholder="Enter your email"
               className={`  w-72 py-4 px-2 rounded-md transform transition duration-300 ease-in-out hover:scale-110 ${
                 theme === false
@@ -64,13 +90,15 @@ function Connect({ theme }) {
         >
           Sumit &rarr;
         </button> */}
-        <Button
-          text={"Submit →"}
-          bgColor={theme === false ? "#ff8b61" : "#dbebff"}
-          color={"#4a4949"}
-          hoverColor={theme === false ? "#ffa281" : "#c5d3e5"}
-          hoverText={"gray-500"}
-        />
+        <button type="submit">
+          <Button
+            text={"Submit →"}
+            bgColor={theme === false ? "#ff8b61" : "#dbebff"}
+            color={"#4a4949"}
+            hoverColor={theme === false ? "#ffa281" : "#c5d3e5"}
+            hoverText={"gray-500"}
+          />
+        </button>
       </form>
       <div className=" animate__animated animate-pulse animate__delay-1s animate__slow flex justify-center items-center gap-2 mt-32 ">
         <IoIosMail
