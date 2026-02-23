@@ -5,28 +5,6 @@ import Button from "./Button";
 import emailjs from "@emailjs/browser";
 
 function Connect({ theme }) {
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_s0qfwjr",
-        "template_aithf0p",
-        e.target,
-        "bqZuzaZq4XYFCIDLC",
-      )
-      .then(
-        () => {
-          alert("Message sent successfully ✅");
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error);
-          alert("Failed to send ❌");
-        },
-      );
-  };
-
   return (
     <div id="contact" className="pt-24 pb-10">
       <div className="flex flex-col items-center ">
@@ -40,7 +18,6 @@ function Connect({ theme }) {
         </p>
       </div>
       <form
-        onSubmit={sendEmail}
         action="#"
         className="flex flex-col justify-center items-center gap-2"
       >
