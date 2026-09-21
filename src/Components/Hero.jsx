@@ -2,6 +2,7 @@ import React from "react";
 import { BsDownload } from "react-icons/bs";
 import Button from "./Button";
 import { GlowingStarsBackgroundCard } from "./ui/glowing-stars";
+import resume from "../Images/gulam_khan_,resume.pdf";
 
 function Hero({ theme }) {
   return (
@@ -20,7 +21,7 @@ function Hero({ theme }) {
           Frontend Engineer
         </h3>
         <p className="font-serif max-sm:text-md  min-sm:text-lg pb-10 ">
-          I’m Frontend Engineer with 2+ years of experience, specialising in
+          I’m Frontend Engineer with 3+ years of experience, specialising in
           React, Next.Js, Javascript and other Web technologies.
         </p>
         <div className="flex max-sm:flex-col max-sm:gap-4 ">
@@ -28,12 +29,7 @@ function Hero({ theme }) {
           Contact me &rarr;
         </button> */}
 
-          <a
-            href="#contact"
-            target="_blank"
-            rel="noopener noreferrer"
-            download={true}
-          >
+          <a href="#contact">
             <Button
               theme={theme}
               text={"Contact me →"}
@@ -42,7 +38,7 @@ function Hero({ theme }) {
               hoverColor={"#ffa281"}
             ></Button>
           </a>
-          <a href="/Resume/Gulam_Frontend_Developer.pdf">
+          <a href={resume} download={"gulam_khan_,resume.pdf"}>
             <Button
               theme={theme}
               text={"My Resume"}

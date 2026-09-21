@@ -12,8 +12,10 @@ function Career({ theme }) {
         <h1 className="text-2xl font-bold text-[#FF8b61]">MAK Byte</h1>
       </div>
       <p className="font-serif font-semibold pb-6">
-        Began my professional journey as a Frontend Engineer at Mak Byte from
-        September 2023, where I built a strong foundation in web development.
+        Began my professional journey as a Frontend Engineer at Mak Byte in
+        September 2023, where I continue to work, building a strong foundation
+        in web development and enhancing my skills in modern frontend
+        technologies.
       </p>
       <div
         className={`flex flex-col justify-center items-center w-[100%] transform transition duration-300 ease-in-out hover:scale-110 ${

@@ -3,7 +3,8 @@ import css from "./Images/csslogo.svg";
 import javaScript from "./Images/javascriptlogo.svg";
 import tailwind from "./Images/tailwindlogo.svg";
 import react from "./Images/reactlogo.svg";
-import redux from "./Images/reduxIcon.svg";
+import redux from "./Images/redux-logo-svg.svg";
+import next from "./Images/next.svg";
 
 const data = {
   projectData: [
@@ -23,17 +24,22 @@ const data = {
       heading: "IntMaster",
       para: "A user-friendly interface designed to provide real-time interviews with both theory and practical questions and keeping day to goals for user.",
     },
+
     {
-      heading: "Optimist-Dev",
-      para: "A responsive online learning platform showcasing courses, progress tracking, and enrollment details with a clean, user-friendly interface.",
+      heading: "Optimist Dev",
+      para: "An online learning platform featuring courses, video lectures, student enrollment, and progress tracking.",
     },
     {
-      heading: "Hijrat",
-      para: "A responsive Hajj & Umrah tours website showcasing packages, booking details, and travel statistics in a clean, user-friendly interface.",
+      heading: "E-Commerce Website",
+      para: "A responsive shopping website with dynamic product listings and smooth navigation.",
     },
     {
-      heading: "E-Commerce",
-      para: "A responsive e-commerce website showcasing products, pricing, and order details with a clean, user-friendly interface.",
+      heading: "Hijrat Tours & Travel",
+      para: "A responsive travel website showcasing tour packages, destinations, and travel information.",
+    },
+    {
+      heading: "Mumbai Explorer",
+      para: "A city guide to explore Mumbai attractions, weather, and local events.",
     },
   ],
   headerData: [
@@ -61,11 +67,12 @@ const data = {
     { skill: "REACT", imgSrc: react },
     { skill: "TAILWIND", imgSrc: tailwind },
     { skill: "REDUX", imgSrc: redux },
+    { skill: "NEXT", imgSrc: next },
   ],
   introData: [
-    { numb: 2 + "+", desc: "Years of Expirence" },
-    { numb: 7, desc: "Projects Completed" },
-    { numb: 6, desc: "Skills Mastered" },
+    { numb: "3+", desc: "Years of Expirence" },
+    { numb: 8, desc: "Projects Completed" },
+    { numb: 7, desc: "Skills Mastered" },
   ],
 };
 

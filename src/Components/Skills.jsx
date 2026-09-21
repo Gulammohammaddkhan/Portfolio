@@ -14,7 +14,7 @@ function Skills({ skillsData }) {
           return (
             <div
               key={item.skill}
-              className="flex flex-col justify-center  items-center"
+              className="flex pb-2 flex-col justify-center items-center"
             >
               <img
                 src={item.imgSrc}
